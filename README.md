@@ -22,7 +22,6 @@ Each region has its own server list. They are as follows:
  * [EU](http://tera.gameforge.com/): <http://web-sls.tera.gameforge.com:4566/servers/list.uk>
  * [JP](http://tera.pmang.jp/): <http://tera.pmang.jp/game_launcher/server_list.xml>
  * [KR](http://tera.nexon.com/): <http://tera.nexon.com/launcher/sls/servers/list.xml>
- * [NA](http://tera.enmasse.com/): <http://sls.service.enmasse.com:8080/servers/list.en>
  * [RU](http://www.tera-online.ru/): <http://launcher.tera-online.ru/launcher/sls/>
  * [TW](http://tera.mangot5.com/): <http://tera.mangot5.com/game/tera/serverList.xml>
 
@@ -30,7 +29,7 @@ Each region has its own server list. They are as follows:
 
 ### `new SlsProxy(opts)`
 Constructor with the following allowed options, all optional:
- * `url`: The URL of the target server list. Default: `http://sls.service.enmasse.com:8080/servers/list.en`
+ * `url`: The URL of the target server list.
  * `hostname`: Overrides the hostname for the parsed `url` if given.
  * `port`: Overrides the port for the parsed `url` if given.
  * `pathname`: Overrides the pathname for the parsed `url` if given. Can be a string for a single path, or an array for multiple paths.
