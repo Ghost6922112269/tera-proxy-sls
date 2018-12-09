@@ -15,16 +15,11 @@ function c(method) {
   };
 }
 
-try {
-  // eslint-disable-next-line global-require, import/no-extraneous-dependencies
-  module.exports = require('baldera-logger')('tera-proxy-sls');
-} catch (err) {
-  module.exports = {
-    trace: () => {},
-    debug: () => {},
-    info: c('log'),
-    warn: c('warn'),
-    error: c('error'),
-    fatal: c('error'),
-  };
-}
+module.exports = {
+  trace: () => {},
+  debug: () => {},
+  info: c('log'),
+  warn: c('warn'),
+  error: c('error'),
+  fatal: c('error'),
+};
